@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		A21F09B4291BAE40008AFE29 /* CryptoSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F09B3291BAE40008AFE29 /* CryptoSwiftApp.swift */; };
 		A21F09B6291BAE40008AFE29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F09B5291BAE40008AFE29 /* ContentView.swift */; };
-		A21F09B8291BAE41008AFE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21F09B7291BAE41008AFE29 /* Assets.xcassets */; };
 		A21F09BB291BAE41008AFE29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21F09BA291BAE41008AFE29 /* Preview Assets.xcassets */; };
+		A21F09C2291BAFA8008AFE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21F09C1291BAFA8008AFE29 /* Assets.xcassets */; };
+		A21F09C5291BB01E008AFE29 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F09C4291BB01E008AFE29 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A21F09B0291BAE40008AFE29 /* CryptoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21F09B3291BAE40008AFE29 /* CryptoSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSwiftApp.swift; sourceTree = "<group>"; };
 		A21F09B5291BAE40008AFE29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A21F09B7291BAE41008AFE29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A21F09BA291BAE41008AFE29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A21F09C1291BAFA8008AFE29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Resources/Assets.xcassets; sourceTree = "<group>"; };
+		A21F09C4291BB01E008AFE29 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 			children = (
 				A21F09B3291BAE40008AFE29 /* CryptoSwiftApp.swift */,
 				A21F09B5291BAE40008AFE29 /* ContentView.swift */,
-				A21F09B7291BAE41008AFE29 /* Assets.xcassets */,
+				A21F09C3291BB004008AFE29 /* Extensions */,
+				A21F09C1291BAFA8008AFE29 /* Assets.xcassets */,
 				A21F09B9291BAE41008AFE29 /* Preview Content */,
 			);
 			path = CryptoSwift;
@@ -65,6 +68,14 @@
 				A21F09BA291BAE41008AFE29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A21F09C3291BB004008AFE29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A21F09C4291BB01E008AFE29 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21F09BB291BAE41008AFE29 /* Preview Assets.xcassets in Resources */,
-				A21F09B8291BAE41008AFE29 /* Assets.xcassets in Resources */,
+				A21F09C2291BAFA8008AFE29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				A21F09B6291BAE40008AFE29 /* ContentView.swift in Sources */,
 				A21F09B4291BAE40008AFE29 /* CryptoSwiftApp.swift in Sources */,
+				A21F09C5291BB01E008AFE29 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +282,12 @@
 				DEVELOPMENT_TEAM = 3L52645U4Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Portfolio";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +312,12 @@
 				DEVELOPMENT_TEAM = 3L52645U4Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Portfolio";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
