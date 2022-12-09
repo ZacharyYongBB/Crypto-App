@@ -29,6 +29,10 @@ struct PortfolioView: View {
                     
                 }
             }
+            .background(
+                Color.theme.background
+                    .ignoresSafeArea()
+            )
             .navigationTitle("Edit Portfolio")
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -37,6 +41,7 @@ struct PortfolioView: View {
                     } label: {
                         Image(systemName: "xmark")
                             .font(.headline)
+                            .tint(Color.theme.accent)
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -106,22 +111,28 @@ extension PortfolioView {
         VStack(spacing: 20) {
             HStack {
                 Text("Current price of \(selectedCoin?.symbol.uppercased() ?? ""):")
+                    .foregroundColor(Color.theme.accent)
                 Spacer()
                 Text(selectedCoin?.currentPrice.asCurrencyWith6Decimals() ?? "")
+                    .foregroundColor(Color.theme.accent)
             }
             Divider()
             HStack {
                 Text("Amount holding:")
+                    .foregroundColor(Color.theme.accent)
                 Spacer()
                 TextField("Eg: 69", text: $quantityText)
                     .multilineTextAlignment(.trailing)
                     .keyboardType(.decimalPad)
+                    .foregroundColor(Color.theme.accent)
             }
             Divider()
             HStack {
                 Text("Current value:")
+                    .foregroundColor(Color.theme.accent)
                 Spacer()
                 Text(getCurrentValue().asCurrencyWith2Decimals())
+                    .foregroundColor(Color.theme.accent)
             }
         }
         .padding()

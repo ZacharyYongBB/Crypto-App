@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Color {
     
-    static let theme = ColorTheme()
+    static let theme = ColorTheme2()
     static let launch = LaunchTheme()
     
 }
@@ -22,6 +22,16 @@ struct ColorTheme {
     let green = Color("GreenColor")
     let red = Color("RedColor")
     let secondaryText = Color("SecondaryTextColor")
+    
+}
+
+struct ColorTheme2 {
+    
+    let accent = Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
+    let background = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    let green = Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1))
+    let red = Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1))
+    let secondaryText = Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
     
 }
 

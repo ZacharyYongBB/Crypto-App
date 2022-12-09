@@ -19,11 +19,21 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                zacharySection
-                coingeckoSection
-                developerSection
-                applicationSection
+            ZStack {
+                // background
+                Color.theme.background
+                    .ignoresSafeArea()
+                
+                // content
+                List {
+                    zacharySection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    coingeckoSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    developerSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    applicationSection
+                }
             }
             .font(.headline)
             .foregroundColor(.blue)
@@ -37,6 +47,7 @@ struct SettingsView: View {
                     } label: {
                         Image(systemName: "xmark")
                             .font(.headline)
+                            .tint(Color.theme.accent)
                     }
                 }
             }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A21F09B4291BAE40008AFE29 /* CryptoSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F09B3291BAE40008AFE29 /* CryptoSwiftApp.swift */; };
-		A21F09B6291BAE40008AFE29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F09B5291BAE40008AFE29 /* ContentView.swift */; };
 		A21F09BB291BAE41008AFE29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21F09BA291BAE41008AFE29 /* Preview Assets.xcassets */; };
 		A21F09C5291BB01E008AFE29 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F09C4291BB01E008AFE29 /* Color.swift */; };
 		A22FD24C293732F100D7F3B8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FD24B293732F100D7F3B8 /* DetailView.swift */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		A21F09B0291BAE40008AFE29 /* CryptoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21F09B3291BAE40008AFE29 /* CryptoSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSwiftApp.swift; sourceTree = "<group>"; };
-		A21F09B5291BAE40008AFE29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A21F09BA291BAE41008AFE29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A21F09C4291BB01E008AFE29 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A22FD24B293732F100D7F3B8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 				A247B7CE292648B3002FFF6D /* Services */,
 				A26EDAAD291D1B69004DD0B2 /* Models */,
 				A21F09C6291BB26B008AFE29 /* Core */,
-				A21F09B5291BAE40008AFE29 /* ContentView.swift */,
 				B691958F291E9203005A50A8 /* Assets.xcassets */,
 				A21F09B9291BAE41008AFE29 /* Preview Content */,
 			);
@@ -407,7 +404,6 @@
 				B602F0662920D26A00D9268E /* HomeViewModel.swift in Sources */,
 				B61BB281292A198F00FFC771 /* LocalFileManager.swift in Sources */,
 				B642CF5C2931D19E000C19EF /* MarketDataModel.swift in Sources */,
-				A21F09B6291BAE40008AFE29 /* ContentView.swift in Sources */,
 				B6FA45AB292D1BB0008D83BC /* StatisticView.swift in Sources */,
 				A2D41375291BBEC000C1A25F /* HomeView.swift in Sources */,
 				A21F09B4291BAE40008AFE29 /* CryptoSwiftApp.swift in Sources */,
@@ -571,7 +567,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,7 +598,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
